@@ -1,0 +1,35 @@
+/* Init */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Variables */
+:root {
+  --font: "Crimson Text", serif;
+  --clr-primary-dark: #333332;
+  --clr-secondary-dark: #172e1b;
+  --clr-primary-light: #e1dac7;
+  --clr-accent: #d46c07;
+  --inspect: "solid red 1px";
+}
+
+/* Main Styling */
+body {
+  font-family: var(--font);
+}
