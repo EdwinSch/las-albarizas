@@ -26,10 +26,37 @@ ul {
   --clr-secondary-dark: #172e1b;
   --clr-primary-light: #e1dac7;
   --clr-accent: #d46c07;
-  --inspect: "solid red 1px";
+  --inspect: solid red 1px;
 }
 
 /* Main Styling */
 body {
   font-family: var(--font);
+  background-color: var(--clr-primary-light);
+}
+
+.nav-btn {
+  margin: 0 right;
+  height: 60px;
+  width: 60px;
+}
+
+main {
+  position: relative;
+}
+
+.nav-wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0px;
+  overflow: hidden;
+  height: 400px;
+  background-color: var(--clr-secondary-dark);
+  color: var(--clr-primary-light);
+  transition: 500ms ease;
+}
+
+.nav-open {
+  width: 200px;
 }
